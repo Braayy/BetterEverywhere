@@ -1,14 +1,17 @@
 {
   "name": "bettereverywhere",
-  "version": "1.0.0",
-  "description": "",
-  "private": true,
-  "keywords": [],
-  "author": "Braayy",
-  "license": "MIT",
-  "dependencies": {},
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun run build.ts"
+  },
   "devDependencies": {
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@biomejs/biome": "^1.7.0"
   }
 }
